@@ -86,6 +86,47 @@
 					}
 				}
 			}
+		},
+		"uuid": {
+			"projectType": "library",
+			"schematics": {},
+			"root": "packages/uuid",
+			"sourceRoot": "packages/uuid",
+			"architect": {
+				"build": {
+					"builder": "@nrwl/node:package",
+					"options": {
+						"outputPath": "dist/packages/uuid",
+						"tsConfig": "packages/uuid/tsconfig.json",
+						"packageJson": "packages/uuid/package.json",
+						"main": "packages/uuid/index.ts",
+						"assets": [
+							"packages/uuid/*.md",
+							"packages/uuid/index.d.ts",
+							"LICENSE",
+							{
+								"glob": "**/*",
+								"input": "packages/uuid/platforms/",
+								"output": "./platforms/"
+							}
+						]
+					}
+				},
+				"build.all": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["nx run uuid:build", "node tools/scripts/build-finish.ts uuid"],
+						"parallel": false
+					}
+				},
+				"focus": {
+					"builder": "@nrwl/workspace:run-commands",
+					"options": {
+						"commands": ["nx g @nativescript/plugin-tools:focus-packages uuid"],
+						"parallel": false
+					}
+				}
+			}
 		}
 	},
 	"cli": {
