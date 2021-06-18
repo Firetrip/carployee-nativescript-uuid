@@ -1,7 +1,7 @@
 {
-	"name": "@nativescript/uuid",
+	"name": "@carployee/uuid",
 	"version": "1.0.0",
-	"description": "Add a plugin description",
+	"description": "A working NS8 version of https://github.com/owen-it/nativescript-uuid",
 	"main": "index",
 	"typings": "index.d.ts",
 	"nativescript": {
@@ -22,14 +22,9 @@
 		"Android"
 	],
 	"author": {
-		"name": "NativeScript",
-		"email": "oss@nativescript.org"
-	},
-	"bugs": {
-		"url": "https://github.com/NativeScript/plugins/issues"
+		"name": "Firetrip"
 	},
 	"license": "Apache-2.0",
-	"homepage": "https://github.com/NativeScript/plugins",
 	"readmeFilename": "README.md",
 	"bootstrapper": "@nativescript/plugin-seed"
 }
