@@ -1,6 +1,6 @@
 {
 	"name": "@carployee/uuid",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A working NS8 version of https://github.com/owen-it/nativescript-uuid",
 	"main": "index",
 	"typings": "index.d.ts",
